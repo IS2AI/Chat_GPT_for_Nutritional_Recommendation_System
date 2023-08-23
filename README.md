@@ -29,7 +29,7 @@ cases_results_2.zip - contain the data in Kazakh language
 
 cases_results_2_tr.zip - contain the data in Kazakh language with the translation before passing to the Chat-GPT
 
-Use gpt_response_extraction.py to extract the output using the Chat-GPT api.
+Use **gpt_response_extraction.py** to extract the output using the Chat-GPT api.
 
 ## File structure
 
