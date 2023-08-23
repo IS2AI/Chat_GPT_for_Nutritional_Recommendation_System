@@ -34,7 +34,7 @@ for each_case in cases:
                 result = translator.translate(original)
             #print(result)
             # Set openai.api_key to the OPENAI environment variable
-            openai.api_key = "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"
+            openai.api_key = "PUT-YOUR-KEY-HERE"
 
             messages = [
                 # system message first, it helps set the behavior of the assistant
