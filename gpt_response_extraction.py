@@ -4,6 +4,7 @@ from deep_translator import GoogleTranslator
 
 translator = GoogleTranslator(source='kazakh', target='en')
 
+# read all files from the directory
 cases = os.listdir('cases')
 ready_cases = os.listdir('cases_results_2_tr')
 ready_cases = [x[:-8] for x in ready_cases]
@@ -67,10 +68,14 @@ for each_case in cases:
 
             response = chat_completion.choices[0].message.content
             #print("ChatGPT:", response)
+
+            # Back translate the response to the original language
             translator_back = GoogleTranslator(source='en', target='kazakh')
             first_part = translator_back.translate(response1)
             save_text = translator_back.translate(response)
             save_text = original + first_part + "Предложите конкретный план питания на день, основанный на профиле пациента с использованием центральноазиатской пищи." + save_text
+
+            # Save the text
             file = open("cases_results_2_tr/{}_gpt.txt".format(each_case[:-4]), "a")
             a = file.write(save_text)
             file.close()
