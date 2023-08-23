@@ -1,6 +1,6 @@
 # Chat_GPT_for_Nutritional_Recommendation_System
 
-This repository contains the code, 50 different patient profiles and respective Chat-GPT responses on providing nutritional recommendations and sample diet plans. Patient profiles contain easy, medium and complex cases and various diseases. The project aims to evaluate the application of large language models for nutritional recommendation systems.
+This repository contains the code, 50 different patient profiles, and respective Chat-GPT responses with nutritional recommendations and sample diet plans. Patient profiles contain easy, medium, and complex cases and various diseases. The project aims to evaluate the application of large language models for nutritional recommendation systems.
 
 
 Responses were evaluated based on the personalization, consistency with evidence-based recommendations/ guidelines, and practicality. 
